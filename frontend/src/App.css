@@ -1,0 +1,84 @@
+.app {
+  max-width: 72rem;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: clamp(1.25rem, 4vw, 2rem) clamp(1.25rem, 4vw, 2.5rem)
+    clamp(2.5rem, 6vw, 3.5rem);
+}
+
+.site-header {
+  margin-bottom: clamp(1.75rem, 4vw, 2.5rem);
+  padding-bottom: clamp(1.25rem, 3vw, 1.75rem);
+  border-bottom: 1px solid var(--border);
+}
+
+.site-header__brand {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.site-header__badge {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3rem;
+  height: 3rem;
+  padding: 0 0.65rem;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--badge-fg);
+  background: var(--badge-bg);
+}
+
+.site-header__title {
+  margin: 0 0 0.2rem;
+  font-size: clamp(1.65rem, 4vw, 2.1rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: var(--text);
+}
+
+.site-header__subtitle {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+  max-width: 26rem;
+  line-height: 1.45;
+}
+
+.main {
+  width: 100%;
+}
+
+.section__title {
+  margin: 0 0 0.35rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.section__intro {
+  margin: 0 0 1.25rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+  max-width: 36rem;
+  line-height: 1.5;
+}
+
+.class-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  gap: 1rem;
+}
+
+.class-grid__item {
+  margin: 0;
+}
